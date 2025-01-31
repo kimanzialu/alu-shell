@@ -1,12 +1,2 @@
 #!/bin/bash
-
-# Create the directory if it doesn't exist
-mkdir -p /tmp/my_first_directory
-
-# Create the file betty if it doesn't exist (optional)
-touch /tmp/betty
-
-
-
-
 mv /tmp/betty /tmp/my_first_directory/
