@@ -1,0 +1,5 @@
+#!/bin/bash
+# This script outputs its own PID
+
+echo $$   # This will print the Process ID of the script
+
