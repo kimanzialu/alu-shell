@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# This script lists all processes for all users, including those without a TTY
-ps -eo user,stime,cmd --sort=start_time | awk '{printf "%-10s %-10s %-50s\n", $1, $2, $3}'
-
+#Must show all processes, for all users, including those which might not have a TTY
+#Display in a user-oriented format
+#Show process hierarchy
+ps auxf
