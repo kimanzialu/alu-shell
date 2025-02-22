@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#The exact format must be:
+#OCCURENCE_NUMBER IP HTTP_CODE
+#In list format
+#Ordered from the greatest to the lowest number of occurrences
+#See example
+#use awk
+awk '{print $1,$9}' apache-access.log | sort -V | uniq -c | sort -n | perl -e 'print reverse <>'
