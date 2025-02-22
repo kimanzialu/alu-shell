@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#use awk
+#Format: IP HTTP_CODE
+#In a list format
+#see example
+LOG_FILE="apache-access.log"
+if [[ ! -f $LOG_FILE ]]; then
+    echo "Log file not found: $LOG_FILE"
+    exit 1
+fi
+awk '{print $1, $9}' "$LOG_FILE"
